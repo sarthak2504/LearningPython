@@ -4,9 +4,9 @@ mydb = mysql.connector.connect(host='localhost', user='sarthak', passwd='sarthak
 
 mycursor = mydb.cursor()
 
-mycursor.execute("select * from student;")
+mycursor.execute("select * from student where name = 'sarthak';")
 
-result = mycursor.fetch()
+result = mycursor.fetchall()
 
 for i in result:
     print(i)
