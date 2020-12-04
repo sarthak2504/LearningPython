@@ -22,3 +22,5 @@ df_tab = pd.read_csv('pokemon_data.txt', delimiter='\t')
 #    print(index,rows['Name'])
 
 print(df.loc[df['Type 1'] == "Water"][df['Type 2'] == "Flying"])
+
+#Added a line to test GIT
